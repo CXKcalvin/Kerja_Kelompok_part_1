@@ -1,0 +1,101 @@
+
+body{
+    font-family: arial;
+    margin: 0;
+}
+h1, h3{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background: rgb(255, 123, 0);
+    color: azure;
+}
+h2{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background: rgb(207, 116, 31);
+    color: azure;
+}
+.p{
+    text-align: center;
+}
+.menu{
+    width: 200px;
+    display:inline-block;
+}
+.menu img{
+    width: 100%;
+    height: 150px;
+    transition:0.3s;
+}
+.menu:hover{
+    background:rgb(34, 13, 148);
+}
+.menu:hover img{
+    transform: scale(1.2);
+    margin-bottom: 15px;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#gambar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(kuliner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    margin: 0;
+}
+.text{
+    color: #473dcf;
+}
+.gambar2{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(kuliner3.jpg);
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    background-size: cover;
+    z-index: -1;
+    
+}
+#daftar{
+    text-align: center;
+}
+.text2{
+    text-align: right;
+}
+.halaman{
+    width: 200px;
+    display:inline-block;
+}
+.halaman img{ 
+    width: 100%;
+    height: 150px;
+    transition:0.3s;
+}
+.halaman:hover{
+    background:rgb(0, 0, 0);
+}
+.halaman:hover img{
+    transform: scale(1.2);
+    margin-bottom: 15px;
+}
+.halaman a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.text-kanan{
+    float: right;
+}
