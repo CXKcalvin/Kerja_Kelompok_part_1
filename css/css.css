@@ -1,4 +1,11 @@
+*{
+    user-select: none;
+    caret-color: transparent;
+}
 
+img{
+    pointer-events: none;
+}
 body{
     font-family: arial;
     margin: 0;
@@ -23,6 +30,7 @@ h2{
 .menu{
     width: 200px;
     display:inline-block;
+    gap: 20px;
 }
 .menu img{
     width: 100%;
@@ -47,7 +55,7 @@ h2{
     left: 0%;
     width: 100%;
     min-height: 100vh;
-    background-image: url(kuliner.jpg);
+    background-image: url(../img/kuliner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -62,7 +70,7 @@ h2{
     left: 0%;
     width: 100%;
     min-height: 100vh;
-    background-image: url(kuliner3.jpg);
+    background-image: url(../img/kuliner3.jpg);
     background-repeat: no-repeat;
     filter: blur(5px);
     background-size: cover;
@@ -71,6 +79,8 @@ h2{
 }
 #daftar{
     text-align: center;
+    gap: 20px;
+    align-items: center;
 }
 .text2{
     text-align: right;
