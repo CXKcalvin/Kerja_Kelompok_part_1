@@ -10,17 +10,14 @@ body{
     font-family: arial;
     margin: 0;
 }
-h1, h3{
+judul{
     text-align: center;
     margin: 0;
-    padding: 10px;
     background: rgb(255, 123, 0);
     color: azure;
 }
-h2{
+.container-nav{
     text-align: center;
-    margin: 0;
-    padding: 10px;
     background: rgb(207, 116, 31);
     color: azure;
 }
