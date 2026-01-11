@@ -86,22 +86,9 @@ nav ul{
     text-decoration: none;
     font-weight: bold;
 }
-#gambar{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(../img/kuliner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    margin: 0;
-}
-.text{
-    color: #473dcf;
-}
-.gambar2{
+
+/* Blm Diketahui */
+.background{
     position: absolute;
     top: 0%;
     left: 0%;
@@ -114,35 +101,18 @@ nav ul{
     z-index: -1;
     
 }
+
 #daftar{
     text-align: center;
     gap: 20px;
     align-items: center;
 }
-.text2{
-    text-align: right;
-}
-.halaman{
-    width: 200px;
-    display:inline-block;
-}
-.halaman img{ 
-    width: 100%;
-    height: 150px;
-    transition:0.3s;
-}
-.halaman:hover{
-    background:rgb(0, 0, 0);
-}
-.halaman:hover img{
-    transform: scale(1.2);
-    margin-bottom: 15px;
-}
-.halaman a{
-    color: #fff;
+
+#daftar a{
     text-decoration: none;
+    color: white;
+    font-size: 20px;
     font-weight: bold;
-}
-.text-kanan{
-    float: right;
+    padding: 10px;
+    border-radius: 8px;
 }
