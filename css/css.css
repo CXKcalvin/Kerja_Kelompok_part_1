@@ -116,3 +116,16 @@ nav ul{
     padding: 10px;
     border-radius: 8px;
 }
+
+/* Bagian Footer */
+footer{
+    backdrop-filter: blur(10px);
+    color: white;
+    text-shadow: cyan 0px 0px 5px,
+    cyan 0px 0px 10px,
+    cyan 0px 0px 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
