@@ -129,3 +129,21 @@ footer{
     position: absolute;
     bottom: 0;
 }
+
+/* Bagian Input Number */
+/* Untuk Chrome, Safari, Edge */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Untuk Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Jika ingin lebih universal (terkadang diperlukan untuk Firefox modern) */
+input[type=number] {
+    appearance: textfield;
+}
