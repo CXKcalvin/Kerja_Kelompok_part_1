@@ -36,4 +36,7 @@ const menus = [
     gambar: "img/pop ice.jpeg"
   }
 ];
-// 
+
+const hasil = menus.filter(m => m.harga > 14000);
+console.log(hasil);
+
