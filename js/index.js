@@ -2,7 +2,7 @@ const daftar = document.getElementById("daftar");
 
 menus.forEach(menu => {
   const link = document.createElement("a");
-  link.href = `../html/menu.html?menu=${menu.id}`;
+  link.href = `/html/menu.html?menu=${menu.id}`;
 
   const divMenu = document.createElement("div");
   divMenu.className = "menu";
