@@ -66,8 +66,7 @@ nav ul{
 .menu{
     width: 200px;
     display:inline-block;
-    gap: 20px;
-    margin: 30px;
+    margin: 50px 0 0 50px;
 }
 .menu img{
     width: 100%;
@@ -88,7 +87,7 @@ nav ul{
     font-weight: bold;
 }
 
-/* Blm Diketahui */
+/* Bagian Background */
 .background{
     position: absolute;
     top: 0%;
@@ -106,7 +105,6 @@ nav ul{
 #daftar{
     display: grid;
     text-align: center;
-    gap: 10px;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -116,7 +114,6 @@ nav ul{
     color: white;
     font-size: 20px;
     font-weight: bold;
-    padding: 10px;
     border-radius: 8px;
 }
 
@@ -131,6 +128,7 @@ footer{
     width: 100%;
     position: absolute;
     bottom: 0;
+    z-index: -1;
 }
 
 /* Bagian Input Number */
