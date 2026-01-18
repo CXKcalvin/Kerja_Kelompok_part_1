@@ -13,6 +13,10 @@ body{
     overflow: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Bagian Navbar */
 nav ul{
     list-style: none;
