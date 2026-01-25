@@ -45,13 +45,21 @@
             <br>
             <tr>
                 <th>
-                    <h1 id="nama"></h1>
+                    <span id="nama"></span>
                 </th>
                 <th>
                     <p id="harga"></p>
                 </th>
                 <th>
-                    <input type="number" id="cek-porsi">
+                    <select name="" id="cek-porsi">
+                        <option value="1">1 porsi</option>
+                        <option value="2">2 porsi</option>
+                        <option value="3">3 porsi</option>
+                        <option value="4">4 porsi</option>
+                        <option value="5">5 porsi</option>
+                        <option value="custom">custom</option>
+                        <input type="text" placeholder="Custom" id="custom-porsi" style="display: none; width: 60px;">
+                    </select>
                 </th>
                 <th>
                     <input type="number" id="cek-harga">
@@ -60,9 +68,9 @@
         </table>
         <br>
         <a href="../index.html">
-            <button>batal</button>
+            <button id="batal">batal</button>
         </a>
-            <button onclick="dicek()">lanjutkan pesan</button>
+            <button onclick="dicek()" id="lanjut">lanjutkan pesan</button>
     </center>
 
     <!-- Footer -->

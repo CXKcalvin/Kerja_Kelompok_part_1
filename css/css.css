@@ -121,6 +121,39 @@ nav ul{
     border-radius: 8px;
 }
 
+/* Bagian Button */
+#batal{
+    background: red;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    border-radius: 8px;
+}
+
+#batal:hover{
+    background: darkred;
+}
+
+#lanjut{
+    background: green;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    border-radius: 8px;
+}
+
+#lanjut:hover{
+    background: darkgreen;
+}
+
 /* Bagian Footer */
 footer{
     backdrop-filter: blur(10px);

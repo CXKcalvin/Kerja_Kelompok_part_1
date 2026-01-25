@@ -2,21 +2,19 @@ const ck_porsi = document.getElementById('cek-porsi');
 const ck_harga = document.getElementById('cek-harga');
 const total_harga = document.getElementById('harga');
 
-
 function dicek() {
-    if (ck_harga=== "") {
-            alert('Mohon masukkan total harga pesanan Anda!');
-        }
-        else if (ck_porsi === 0 || ck_porsi=== ''){
-            alert('Mohon masukkan jumlah pesanan Anda!');
-        }
-        else if (ck_harga< total_harga){
-            alert('Total harga yang Anda masukkan kurang dari harga menu!');
-        }
-        else if (ck_harga> total_harga){
-            window.location.href = '../html/pesan.html';
-        }
-        else if (ck_harga== total_harga){
-            window.location.href = '../html/pesan.html';
-        }
+    const hasil = parseInt(ck_harga) + parseInt(total_harga);
+    if (ck_harga.value == ""){
+        alert("Masukkan Jumlah Bayar");
+    }
+    else if (total_harga < hasil){
+        alert("Uang Anda Tidak Cukup");
+    }
+    else if (total_harga == hasil){
+        alert("Uang Pas, Terima Kasih");
+        window.location.href = "/html/pesan.html";
+    }
+    else {
+        window.location.href = "/html/pesan.html";
+    }
 }
