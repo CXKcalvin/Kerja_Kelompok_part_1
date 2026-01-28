@@ -1,0 +1,42 @@
+@media (max-width: 800px){
+  body{
+    overflow: hidden;
+  }
+  
+  /* bagian navbar */
+  .judul{
+    font-size: 20px;
+    padding-inline: 0;
+  } 
+  
+  .subjudul{
+    padding-inline: 0;
+  }
+  
+  /* Bagian Menu */
+  #daftar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  .menu{
+    width: 100px;
+    padding-inline: 0;
+    margin: 0;
+  }
+  
+  .menu img{
+    height: 70px;
+  }
+  
+  /* Bagian Footer */
+  footer{
+    font-size: 7px;
+    padding: 10px 0;
+  }
+}

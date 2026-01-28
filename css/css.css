@@ -56,16 +56,6 @@ nav ul{
     align-self: center;
 }
 
-.subjudul button{
-    background: yellow;
-    border: none;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
 /* Bagian Menu */
 .menu{
     width: 200px;
@@ -185,3 +175,4 @@ input[type=number] {
 input[type=number] {
     appearance: textfield;
 }
+
