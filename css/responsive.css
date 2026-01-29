@@ -13,6 +13,10 @@
     padding-inline: 0;
   }
   
+  .subjudul li{
+    font-size: 15px;
+  }
+  
   /* Bagian Menu */
   .container-daftar{
     align-items: center;
@@ -40,9 +44,36 @@
     height: 70px;
   }
   
+  #daftar a{
+    font-size: 15px;
+  }
+  
+  /* Bagian Pesan*/
+  .isi{
+    align-content: center;
+    height: 65dvh;
+  }
+  
+  .isi img{
+    width: 200px;
+    height: 150px;
+  }
+  
   /* Bagian Footer */
   footer{
     font-size: 7px;
     padding: 10px 0;
+  }
+}
+
+@media (max-width: 600px){
+  /* Bagian Pesan*/
+  .container-pesan{
+    display: none;
+  }
+  
+  .container-pesan-2{
+    display: flex;
+    margin: 20px 0;
   }
 }

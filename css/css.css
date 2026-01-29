@@ -144,6 +144,17 @@ nav ul{
     background: darkgreen;
 }
 
+/* Bagian Pesan*/
+.isi{
+  text-align: center;
+  align-content: center;
+  height: 75dvh;
+}
+
+.container-pesan-2{
+  display: none;
+}
+
 /* Bagian Footer */
 footer{
     backdrop-filter: blur(10px);

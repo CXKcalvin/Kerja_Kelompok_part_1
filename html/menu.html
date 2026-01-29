@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
@@ -24,10 +25,12 @@
     <div class="background"></div>
 
     <!-- Pesan -->
-    <center>
+    <div class="isi">
         <img id="gambar" width="300" height="200" style="object-fit: cover; border-radius: 20px;margin-top: 20px;">
         <br>
-        <table border="1" style="background-color: white;">
+        
+        <div class="container-pesan">
+        <table border="1" style="background-color: white;" align="center">
             <tr>
                 <th>
                     nama produk
@@ -66,12 +69,60 @@
                 </th>
             </tr>
         </table>
+      </div>
         <br>
+        
+      <div class="container-pesan-2">
+        <table border="1" style="background-color: white;" align="center">
+            <tr>
+                <th>
+                    nama produk
+                </th>
+                <th>
+                    <span id="nama2"></span>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    harga
+                </th>
+                <th>
+                    <span id="harga2"></span>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    berapa porsi
+                </th>
+                <th>
+                    <select name="" id="cek-porsi">
+                        <option value="1">1 porsi</option>
+                        <option value="2">2 porsi</option>
+                        <option value="3">3 porsi</option>
+                        <option value="4">4 porsi</option>
+                        <option value="5">5 porsi</option>
+                        <option value="custom">custom</option>
+                        <input type="text" placeholder="Custom" id="custom-porsi" style="display: none; width: 60px;">
+                    </select
+                </th>
+            </tr>
+            <tr>
+              <th>
+                  Bayar sejumlah
+              </th>
+              <th>
+                  <input type="number" id="cek-harga">
+                </th>
+            </tr>
+        </table>
+        <br>
+      </div>
+        
         <a href="../index.html">
             <button id="batal">batal</button>
         </a>
             <button onclick="dicek()" id="lanjut">lanjutkan pesan</button>
-    </center>
+    </div>
 
     <!-- Footer -->
     <footer>
