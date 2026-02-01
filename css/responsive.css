@@ -89,3 +89,82 @@
     margin: 20px 0;
   }
 }
+
+
+@media (max-width: 375px){
+  /* bagian navbar */
+  .judul{
+    font-size: 20px;
+    padding-inline: 0;
+  } 
+  
+  .subjudul li{
+    font-size: 15px;
+  }
+
+  /* Bagian Menu */
+  .container-daftar{
+    height: 70dvh;
+  }
+  
+  #daftar{
+    gap: 30px;
+
+  }
+  
+  .menu{
+    width: 120px;
+  }
+  
+  .menu img{
+    height: 70px;
+  }
+  
+  #daftar a{
+    font-size: 15px;
+  }
+
+    /* Bagian Footer */
+  footer{
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 320px){
+  /* bagian navbar */
+  .judul{
+    font-size: 15px;
+    padding-inline: 0;
+  } 
+  
+  .subjudul li{
+    font-size: 10px;
+  }
+
+  /* Bagian Menu */
+  .container-daftar{
+    height: 65dvh;
+  }
+  
+  #daftar{
+    gap: 30px;
+
+  }
+  
+  .menu{
+    width: 90px;
+  }
+  
+  .menu img{
+    height: 50px;
+  }
+  
+  #daftar a{
+    font-size: 10px;
+  }
+
+    /* Bagian Footer */
+  footer{
+    font-size: 6px;
+  }
+}
