@@ -33,7 +33,7 @@ const menus = [
   },
   {
     id: "es-teh",
-    nama: "Es Teh",
+    nama: "Est Teh",
     harga: 5000,
     hargavar: "5000",
     gambar: "img/es teh.jpg",

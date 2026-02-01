@@ -1,5 +1,5 @@
 const ck_porsi = document.getElementById('cek-porsi');
-const ck_harga = document.getElementById('cek-harga');
+const ck_harga = document.querySelectorAll('.cek-harga');
 const total_harga = document.getElementById('harga');
 
 function dicek() {

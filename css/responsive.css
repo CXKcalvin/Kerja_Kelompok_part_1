@@ -52,11 +52,23 @@
   .isi{
     align-content: center;
     height: 65dvh;
+    aspect-ratio: 9/16;
   }
   
   .isi img{
     width: 200px;
     height: 150px;
+  }
+  
+  /* Bagian Akhir */
+  .container-akhir{
+    text-align: center;
+    align-content: center;
+    height: 65dvh;
+  }
+  
+  .gambar{
+    width: 200px;
   }
   
   /* Bagian Footer */

@@ -26,11 +26,11 @@ nav ul{
 .judul{
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 3vh 0;
     color: rgb(255, 72, 0);
     text-align: center;
     align-content: center;
-    font-size: 30px;
+    font-size: 6dvw;
     background: orange;
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -43,7 +43,7 @@ nav ul{
     font-weight: 1000;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 10px 0;
     color: yellow;
     background: orangered;
     display: flex;
@@ -52,19 +52,41 @@ nav ul{
 .subjudul li{
     flex: 1;
     text-align: center;
-    font-size: 20px;
     align-self: center;
+    font-size: 4dvw;
 }
 
 /* Bagian Menu */
+container-daftar{
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+  }
+
+#daftar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 70dvh;
+  }
+  
+#daftar a{
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
 .menu{
-    width: 200px;
     display:inline-block;
-    margin: 50px 0 0 50px;
 }
 .menu img{
-    width: 100%;
-    height: 150px;
+    width: 40vw;
+    height: 15vh;
     transition:0.3s;
     object-fit: cover;
 }
@@ -73,12 +95,12 @@ nav ul{
 }
 .menu:hover img{
     transform: scale(1.2);
-    margin-bottom: 15px;
 }
 .menu a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-display: bottom;
 }
 
 /* Bagian Background */
@@ -94,21 +116,6 @@ nav ul{
     background-size: cover;
     z-index: -1;
     
-}
-
-#daftar{
-    display: grid;
-    text-align: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-#daftar a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;
 }
 
 /* Bagian Button */
@@ -167,6 +174,8 @@ footer{
     position: absolute;
     bottom: 0;
     z-index: -1;
+    font-size: 2dvw;
+    padding: 10px 0;
 }
 
 /* Bagian Input Number */
