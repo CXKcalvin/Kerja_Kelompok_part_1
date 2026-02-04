@@ -10,9 +10,10 @@ menus.forEach(menu => {
   const img = document.createElement("img");
   img.src = menu.gambar;
 
-  const nama = document.createElement("b");
+  const nama = document.createElement("div");
   nama.textContent = menu.nama;
-
+  nama.className = "nama";
+  
   divMenu.appendChild(img);
   divMenu.appendChild(nama);
   link.appendChild(divMenu);

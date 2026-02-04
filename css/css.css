@@ -24,13 +24,13 @@ nav ul{
 }
 
 .judul{
-    width: 100%;
+    width: 100vw;
     height: auto;
-    padding: 3vh 0;
+    padding: 0;
     color: rgb(255, 72, 0);
     text-align: center;
     align-content: center;
-    font-size: 6dvw;
+    font-size: 25px;
     background: orange;
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -84,12 +84,16 @@ container-daftar{
 .menu{
     display:inline-block;
 }
+
 .menu img{
     width: 40vw;
-    height: 15vh;
+    height: 15vh;/
+    aspect-ratio: 16/9;
+    scale: 40dvh;
     transition:0.3s;
     object-fit: cover;
 }
+
 .menu:hover{
     background:rgb(34, 13, 148);
 }
@@ -117,6 +121,16 @@ container-daftar{
     z-index: -1;
     
 }
+
+/* Bagian menu.html */
+.container-pesan{
+  display: none;
+}
+
+.isi img{
+    width: 200px;
+    height: 150px;
+  }
 
 /* Bagian Button */
 #batal{
@@ -151,15 +165,11 @@ container-daftar{
     background: darkgreen;
 }
 
-/* Bagian Pesan*/
+/* Bagian Pesan.html*/
 .isi{
   text-align: center;
   align-content: center;
   height: 75dvh;
-}
-
-.container-pesan-2{
-  display: none;
 }
 
 /* Bagian Footer */
@@ -174,7 +184,7 @@ footer{
     position: absolute;
     bottom: 0;
     z-index: -1;
-    font-size: 2dvw;
+    font-size: 2vw;
     padding: 10px 0;
 }
 
