@@ -3,9 +3,6 @@ const ck_porsi = document.getElementById('cek-porsi');
 const ck_harga = document.querySelectorAll('.cek-harga');
 const total_harga = document.getElementById('harga');
 
-const ck_porsi = parseInt(document.getElementById('cek-porsi'));
-const ck_harga = document.getElementById('cek-harga');
-const harga = document.getElementById('harga');
 
 function dicek() {
     const total_harga = parseInt(ck_porsi.value) * parseInt(harga.value);
