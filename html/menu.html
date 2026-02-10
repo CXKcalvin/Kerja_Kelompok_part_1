@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="container-nav">
+<!-- Navbar -->
+<nav class="container-nav">
         <ul class="judul">
             <li>warung makan KATOKAMA</li>
             <li>tempat pesanan makanan terbaik anda</li>
@@ -29,50 +29,7 @@
         <img id="gambar" width="300" height="200" style="object-fit: cover; border-radius: 20px;margin-top: 20px;">
         <br>
         
-        <div class="container-pesan">
-        <table border="1" style="background-color: white;" align="center">
-            <tr>
-                <th>
-                    nama produk
-                </th>
-                <th>
-                    harga
-                </th>
-                <th>
-                    berapa porsi
-                </th>
-                <th>
-                    Bayar sejumlah
-                </th>
-            </tr>
-            <br>
-            <tr>
-                <th>
-                    <span id="nama"></span>
-                </th>
-                <th>
-                    <p id="harga"></p>
-                </th>
-                <th>
-                    <select name="" id="cek-porsi">
-                        <option value="1">1 porsi</option>
-                        <option value="2">2 porsi</option>
-                        <option value="3">3 porsi</option>
-                        <option value="4">4 porsi</option>
-                        <option value="5">5 porsi</option>
-                        <option value="custom">custom</option>
-                        <input type="text" placeholder="Custom" id="custom-porsi" style="display: none; width: 60px;">
-                    </select>
-                </th>
-                <th>
-                    <input type="number" class="cek-harga">
-                </th>
-            </tr>
-        </table>
-      </div>
-        <br>
-        
-      <div class="container-pesan-2">
+    <div class="container-pesan">
         <table border="1" style="background-color: white;" align="center">
             <tr>
                 <th>
@@ -115,14 +72,55 @@
                 </th>
             </tr>
         </table>
-        <br>
-      </div>
-        
-        <a href="../index.html">
-            <button id="batal">batal</button>
-        </a>
-            <button onclick="dicek()" id="lanjut">lanjutkan pesan</button>
     </div>
+        
+    <div class="container-pesan-2">
+        <table border="1" style="background-color: white;" align="center">
+            <tr>
+                <th>
+                    nama produk
+                </th>
+                <th>
+                    harga
+                </th>
+                <th>
+                    berapa porsi
+                </th>
+                <th>
+                    Bayar sejumlah
+                </th>
+            </tr>
+            <br>
+            <tr>
+                <th>
+                    <span id="nama"></span>
+                </th>
+                <th>
+                    <p id="harga"></p>
+                </th>
+                <th>
+                    <select name="" id="cek-porsi">
+                        <option value="1">1 porsi</option>
+                        <option value="2">2 porsi</option>
+                        <option value="3">3 porsi</option>
+                        <option value="4">4 porsi</option>
+                        <option value="5">5 porsi</option>
+                        <option value="custom">custom</option>
+                        <input type="text" placeholder="Custom" id="custom-porsi" style="display: none; width: 60px;">
+                    </select>
+                </th>
+                <th>
+                    <input type="number" class="cek-harga">
+                </th>
+            </tr>
+        </table>
+    </div>
+        
+    <a href="../index.html">
+        <button id="batal">batal</button>
+    </a>
+    <button onclick="dicek()" id="lanjut">lanjutkan pesan</button>
+</div>
 
     <!-- Footer -->
     <footer>
