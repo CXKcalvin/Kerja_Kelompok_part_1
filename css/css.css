@@ -47,11 +47,12 @@ nav ul{
     color: rgb(255, 72, 0);
     text-align: center;
     align-content: center;
-    font-size: 6dvw;
+    font-size: 7dvw;
     background: orange;
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 900;
+    font-family: bold;
 }
 
 .subjudul{
@@ -165,7 +166,11 @@ nav ul{
 .isi{
   text-align: center;
   align-content: center;
-  height: 75dvh;
+  height: 65dvh;
+}
+
+.isi img, .container-pesan{
+  margin-bottom: 20px;
 }
 
 .container-pesan-2{
@@ -177,6 +182,11 @@ nav ul{
 
 .container-akhir{
     text-align: center;
+}
+
+.container-akhir img{
+  width: 80vw;
+  margin: 20px 0;
 }
 
 /* Bagian Footer */

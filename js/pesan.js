@@ -1,24 +1,30 @@
-
-const ck_porsi = document.getElementById('cek-porsi');
-const ck_harga = document.querySelectorAll('.cek-harga');
-const total_harga = document.getElementById('harga');
-
+const cekPorsi = document.querySelectorAll('#cek-porsi');
+const cekHarga = document.querySelectorAll('.cek-harga');
+const hargaText = document.querySelectorAll('#harga');
 
 function dicek() {
-    const total_harga = parseInt(ck_porsi.value) * parseInt(harga.value);
-    if (ck_harga.value == 0){
-        alert("Masukkan Jumlah Bayar");
+
+    // ambil harga satuan (hapus Rp kalau ada)
+    const hargaSatuan = parseInt(hargaText[0].innerText);
+
+    // ambil jumlah porsi
+    const jumlahPorsi = parseInt(cekPorsi[0].value);
+
+    // hitung total harga
+    const totalHarga = hargaSatuan * jumlahPorsi;
+
+    // ambil uang yang dimasukkan user
+    const uangUser = parseInt(cekHarga[0].value);
+
+    if (!uangUser || uangUser == 0) {
+        alert("Masukkan jumlah bayar dulu bro");
+        return;
     }
-    else if (total_harga < ck_harga.value){
-        alert("Uang Anda Tidak Cukup");
-    }
-    else if (total_harga == ck_harga.value){
-        window.location.href = "/html/pesan.html";
-    }
-    else if (total_harga > ck_harga.value){
-        window.location.href = "/html/pesan.html";
-    }
+
+    if (uangUser < totalHarga) {
+        alert("Uang lu kurang bro");
+    } 
     else {
-        alert("Ada Kesalahan")
+        window.location.href = "../html/total.html";
     }
 }
