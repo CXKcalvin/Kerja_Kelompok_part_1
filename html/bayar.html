@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +35,7 @@
                     nama produk
                 </th>
                 <th>
-                    <span id="nama2"></span>
+                    <span id="nama"></span>
                 </th>
             </tr>
             <tr>
@@ -44,7 +43,7 @@
                     harga
                 </th>
                 <th>
-                    <span id="harga2"></span>
+                    <span id="harga"></span>
                 </th>
             </tr>
             <tr>
@@ -52,16 +51,20 @@
                     berapa porsi
                 </th>
                 <th>
-                    <select name="" id="cek-porsi">
-                        <option value="1">1 porsi</option>
-                        <option value="2">2 porsi</option>
-                        <option value="3">3 porsi</option>
-                        <option value="4">4 porsi</option>
-                        <option value="5">5 porsi</option>
-                        <option value="custom">custom</option>
-                        <input type="text" placeholder="Custom" id="custom-porsi" style="display: none; width: 60px;">
-                    </select
+                    <select id="cek-porsi" onchange="toggleCustomInput(this)">
+  <option value="1">1 porsi</option>
+  <option value="2">2 porsi</option>
+  <option value="3">3 porsi</option>
+  <option value="4">4 porsi</option>
+  <option value="5">5 porsi</option>
+  <option value="custom">custom</option>
+</select>
+<input type="number" id="custom-porsi" placeholder="Jumlah porsi" style="display: none; width: 100px;">
                 </th>
+            </tr>
+            <tr>
+              <th>Total Bayar</th>
+              <th><span id="tampilkan"></span></th>
             </tr>
             <tr>
               <th>
@@ -90,16 +93,15 @@
                     Bayar sejumlah
                 </th>
             </tr>
-            <br>
             <tr>
                 <th>
-                    <span id="nama"></span>
+                    <span id="nama2"></span>
                 </th>
                 <th>
-                    <p id="harga"></p>
+                    <p id="harga2"></p>
                 </th>
                 <th>
-                    <select name="" id="cek-porsi">
+                    <select name="" id="cek-porsi2">
                         <option value="1">1 porsi</option>
                         <option value="2">2 porsi</option>
                         <option value="3">3 porsi</option>
@@ -110,7 +112,7 @@
                     </select>
                 </th>
                 <th>
-                    <input type="number" class="cek-harga">
+                    <input type="number" class="cek-harga2">
                 </th>
             </tr>
         </table>
@@ -118,7 +120,7 @@
         
     <button id="batal" onclick="history.back()">batal</button>
     <button onclick="dicek()" id="lanjut">lanjutkan pesan</button>
-    <a href="../html/total.html">tes</a>
+    <!-- <a href="../html/total.html">tes</a> -->
 </div>
 
     <!-- Footer -->
@@ -130,8 +132,8 @@
     </footer>
 
     <script src="../js/menu.js"></script>
-    <script src="../js/detail.js"></script>
-    <script src="../js/pesan.js"></script>
+    <script src="../js/tmpl_menu.js"></script>
+    <script src="../js/total.js"></script>
 </body>
 
 </html>

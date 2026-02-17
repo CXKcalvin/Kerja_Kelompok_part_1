@@ -3,7 +3,6 @@ const menus = [
     id: "pecel-lele",
     nama: "Pecel Lele",
     harga: 15000,
-    hargavar: "15000",
     gambar: "img/pecel lele.webp",
     gambar2: "../img/pecel lele.webp"
   },
@@ -11,7 +10,6 @@ const menus = [
     id: "seblak",
     nama: "Seblak",
     harga: 12000,
-    hargavar: "12000",
     gambar: "img/seblak.webp",
     gambar2: "../img/seblak.webp"
   },
@@ -19,7 +17,6 @@ const menus = [
     id: "bebek-bakar",
     nama: "Bebek Bakar",
     harga: 25000,
-    hargavar: "25000",
     gambar: "img/bebek bakar.webp",
     gambar2: "../img/bebek bakar.webp"
   },
@@ -27,7 +24,6 @@ const menus = [
     id: "ayam-bakar",
     nama: "Ayam Bakar",
     harga: 20000,
-    hargavar: "20000",
     gambar: "img/ayam bakar.webp",
     gambar2: "../img/ayam bakar.webp"
   },
@@ -35,7 +31,6 @@ const menus = [
     id: "es-teh",
     nama: "Es Teh",
     harga: 5000,
-    hargavar: "5000",
     gambar: "img/es teh.jpg",
     gambar2: "../img/es teh.jpg"
   },
@@ -43,7 +38,6 @@ const menus = [
     id: "pop-ice",
     nama: "Pop Ice",
     harga: 7000,
-    hargavar: "7000",
     gambar: "img/pop ice.jpeg",
     gambar2: "../img/pop ice.jpeg"
   }
