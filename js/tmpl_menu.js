@@ -4,9 +4,9 @@ const menuId = params.get("menu");
 const menu = menus.find(m => m.id === menuId);
 
 if (menu) {
-  document.getElementById("nama").textContent = menu.nama;
+  document.querySelectorAll(".nama").forEach(el => {el.textContent = menu.nama;});
   
-  document.getElementById("harga").textContent = `Rp ${menu.harga.toLocaleString()}`;
+  document.querySelectorAll(".harga").forEach(el => {el.textContent = `Rp ${menu.harga.toLocaleString()}`;});
 
   document.getElementById("gambar").src = menu.gambar2;
 }

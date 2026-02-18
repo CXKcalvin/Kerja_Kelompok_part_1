@@ -1,139 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/css.css">
-    <!-- <link rel="stylesheet" href="../css/responsive.css"> -->
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/css.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+    </head>
 
-<body>
-<!-- Navbar -->
-<nav class="container-nav">
-        <ul class="judul">
-            <li>warung makan KATOKAMA</li>
-            <li>tempat pesanan makanan terbaik anda</li>
-        </ul>
-        <ul class="subjudul">
-            <li>daftar menu yang ada di warung kami</li>
-        </ul>
-    </nav>
+    <body>
+    <!-- Navbar -->
+    <nav class="container-nav">
+            <ul class="judul">
+                <li>warung makan KATOKAMA</li>
+                <li>tempat pesanan makanan terbaik anda</li>
+            </ul>
+            <ul class="subjudul">
+                <li>daftar menu yang ada di warung kami</li>
+            </ul>
+        </nav>
 
-    <!-- Background -->
-    <div class="background"></div>
+        <!-- Background -->
+        <div class="background"></div>
 
-    <!-- Pesan -->
-    <div class="isi">
-        <img id="gambar" width="300" height="200" style="object-fit: cover; border-radius: 20px;margin-top: 20px;">
-        <br>
-        
-    <div class="container-pesan">
-        <table border="1" style="background-color: white;" align="center">
-            <tr>
-                <th>
-                    nama produk
-                </th>
-                <th>
-                    <span id="nama"></span>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    harga
-                </th>
-                <th>
-                    <span id="harga"></span>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    berapa porsi
-                </th>
-                <th>
-                    <select id="cek-porsi" onchange="toggleCustomInput(this)">
-  <option value="1">1 porsi</option>
-  <option value="2">2 porsi</option>
-  <option value="3">3 porsi</option>
-  <option value="4">4 porsi</option>
-  <option value="5">5 porsi</option>
-  <option value="custom">custom</option>
-</select>
-<input type="number" id="custom-porsi" placeholder="Jumlah porsi" style="display: none; width: 100px;">
-                </th>
-            </tr>
-            <tr>
-              <th>Total Bayar</th>
-              <th><span id="tampilkan"></span></th>
-            </tr>
-            <tr>
-              <th>
-                  Bayar sejumlah
-              </th>
-              <th>
-                  <input type="number" class="cek-harga">
-                </th>
-            </tr>
-        </table>
-    </div>
-        
-    <div class="container-pesan-2">
-        <table border="1" style="background-color: white;" align="center">
-            <tr>
-                <th>
-                    nama produk
-                </th>
-                <th>
-                    harga
-                </th>
-                <th>
-                    berapa porsi
-                </th>
+        <!-- Pesan -->
+        <div class="isi">
+            <img id="gambar" width="300" height="200" style="object-fit: cover; border-radius: 20px;margin-top: 20px;">
+            <br>
+            
+        <div class="container-pesan">
+            <table border="1" style="background-color: white;" align="center">
+                <tr>
+                    <th>
+                        nama produk
+                    </th>
+                    <th>
+                        <span class="nama"></span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        harga
+                    </th>
+                    <th>
+                        <span class="harga"></span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        berapa porsi
+                    </th>
+                    <th>
+                        <select class="cek-porsi" onchange="toggleCustomInput(this)">
+    <option value="1">1 porsi</option>
+    <option value="2">2 porsi</option>
+    <option value="3">3 porsi</option>
+    <option value="4">4 porsi</option>
+    <option value="5">5 porsi</option>
+    <option value="custom">custom</option>
+    </select>
+    <input type="number" class="custom-porsi" placeholder="Jumlah porsi" style="display: none; width: 100px;">
+                    </th>
+                </tr>
+                <tr>
+                <th>Total Bayar</th>
+                <th><span class="tampilkan"></span></th>
+                </tr>
+                <tr>
                 <th>
                     Bayar sejumlah
                 </th>
-            </tr>
-            <tr>
                 <th>
-                    <span id="nama2"></span>
-                </th>
-                <th>
-                    <p id="harga2"></p>
-                </th>
-                <th>
-                    <select name="" id="cek-porsi2">
-                        <option value="1">1 porsi</option>
-                        <option value="2">2 porsi</option>
-                        <option value="3">3 porsi</option>
-                        <option value="4">4 porsi</option>
-                        <option value="5">5 porsi</option>
-                        <option value="custom">custom</option>
-                        <input type="text" placeholder="Custom" id="custom-porsi" style="display: none; width: 60px;">
-                    </select>
-                </th>
-                <th>
-                    <input type="number" class="cek-harga2">
-                </th>
-            </tr>
-        </table>
+                    <input type="number" class="cek-harga">
+                    </th>
+                </tr>
+            </table>
+        </div>
+            
+        <div class="container-pesan-2">
+            <table border="1" style="background-color: white;" align="center">
+                <tr>
+                    <th>
+                        nama produk
+                    </th>
+                    <th>
+                        harga
+                    </th>
+                    <th>
+                        berapa porsi
+                    </th>
+                    <th>
+                        Total Bayar
+                    </th>
+                    <th>
+                        Bayar sejumlah
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="nama"></span>
+                    </th>
+                    <th>
+                        <p class="harga"></p>
+                    </th>
+                    <th>
+                        <select name="" class="cek-porsi">
+                            <option value="1">1 porsi</option>
+                            <option value="2">2 porsi</option>
+                            <option value="3">3 porsi</option>
+                            <option value="4">4 porsi</option>
+                            <option value="5">5 porsi</option>
+                            <option value="custom">custom</option>
+                        </select>
+                        <input type="number" class="custom-porsi" placeholder="Jumlah porsi" style="display: none; width: 100px;">
+                    </th>
+                    <th>
+                        <span class="tampilkan"></span>
+                    </th>
+                    <th>
+                        <input type="number" class="cek-harga">
+                    </th>
+                </tr>
+            </table>
+        </div>
+            
+        <button id="batal" onclick="history.back()">batal</button>
+        <button onclick="dicek()" id="lanjut">lanjutkan pesan</button>
+        <!-- <a href="../html/total.html">tes</a> -->
     </div>
-        
-    <button id="batal" onclick="history.back()">batal</button>
-    <button onclick="dicek()" id="lanjut">lanjutkan pesan</button>
-    <!-- <a href="../html/total.html">tes</a> -->
-</div>
 
-    <!-- Footer -->
-    <footer>
-        <p>
-            © 2024 Warung Makan Katokama. All rights reserved.
-            <b>| @CXKcalvin | @Nicho | @Hutama | @Rendy |</b>
-        </p>
-    </footer>
+        <!-- Footer -->
+        <footer>
+            <p>
+                © 2024 Warung Makan Katokama. All rights reserved.
+                <b>| @CXKcalvin | @Nicho | @Hutama | @Rendy |</b>
+            </p>
+        </footer>
 
-    <script src="../js/menu.js"></script>
-    <script src="../js/tmpl_menu.js"></script>
-    <script src="../js/total.js"></script>
-</body>
+        <script src="../js/menu.js"></script>
+        <script src="../js/tmpl_menu.js"></script>
+        <script src="../js/total.js"></script>
+    </body>
 
-</html>
+    </html>
