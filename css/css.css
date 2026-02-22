@@ -81,13 +81,13 @@ nav ul{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     width: 100vw;
-    height: 70dvh;
+    height: 60dvh;
   }
   
 #daftar a{
     text-decoration: none;
     color: white;
-    font-size: 2dvw;
+    font-size: 4dvw;
     font-weight: bold;
     border-radius: 8px;
 }

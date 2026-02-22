@@ -1,4 +1,4 @@
-@media (min-width : 1024px){
+@media (min-width : 768px){
   /* Bagian Navbar */
   .judul{
     font-size: 5dvh;
@@ -23,6 +23,7 @@
   .menu img{
     width: 20vw;
     height: 20vh;
+    border-radius: 20px;
   }
 
   /* Bagian bayar.html */
